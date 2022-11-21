@@ -1,11 +1,14 @@
-Y=input() 
-X=Y.split() 
-Y=list(Y) 
-First=X[0][0]
-Second = X[1][1]
-Count=0
-for i in Y:
-    if(i==First or i==Second) :
-        Count=Count+1
-
-print(Count)
+def count(s, c) :
+	
+	res = 0
+	
+	for i in range(len(s)) :
+		
+		if (s[i] == c):
+			res = res + 1
+	return res
+	
+S1= input("")
+string = input("")
+c = string[-1]
+print(count(S1, c))
